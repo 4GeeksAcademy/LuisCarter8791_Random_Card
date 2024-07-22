@@ -9,5 +9,40 @@
 
 .card {
     width: 18rem;
-    height: 24rem;
+    height: 35rem;
+    margin-left: 30%;
+    margin-top: 25vh;
+    position: absolute;
+}
+
+.card-body {
+    padding: 0;
+}
+
+.top-left {
+    width: 30px;
+    height: 30px;
+    background-color: red;
+    position: relative;
+    top: 20;
+    left: 20;
+}
+
+.bottom-right {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background-color: red;
+    position: relative;
+    top: 478px;
+    left: 237px;
+}
+
+.center {
+    width: 30px;
+    height: 30px;
+    background-color: black;
+    position: relative;
+    top: 200px;
+    left: 124px;
 }
