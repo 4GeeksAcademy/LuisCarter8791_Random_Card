@@ -1,48 +1,40 @@
-@import "~bootstrap/dist/css/bootstrap.min.css";
+/* @import "~bootstrap/dist/css/bootstrap.min.css"; */
 
-.container{ 
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
+body {
+  background: green;
+  box-sizing: border-box;
 }
 
 .card {
-    width: 18rem;
-    height: 35rem;
-    margin-left: 30%;
-    margin-top: 25vh;
-    position: absolute;
-}
-
-.card-body {
-    padding: 0;
-}
-
-.top-left {
-    width: 30px;
-    height: 30px;
-    background-color: red;
-    position: relative;
-    top: 20;
-    left: 20;
-}
-
-.bottom-right {
-    position: absolute;
-    width: 30px;
-    height: 30px;
-    background-color: red;
-    position: relative;
-    top: 478px;
-    left: 237px;
-}
-
-.center {
-    width: 30px;
-    height: 30px;
-    background-color: black;
-    position: relative;
-    top: 200px;
-    left: 124px;
+  display: inline-block;
+  margin: auto;
+  background: white;
+  margin: auto;
+  margin-top: 25vh;
+  height: 400px;
+  width: 250px;
+  padding: 20px;
+  font-size: 80px;
+  padding-top: 155px;
+  border: 1px solid black;
+  border-radius: 5px;
+  position: relative;
+    &:before{
+      position: absolute;
+      top: 0;
+      left: 0;
+      font-size: 80px;
+      padding-left: 20px;
+    }
+    &:after{
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      font-size: 80px;
+      padding-right: 20px;
+    }
+    &.spade:before, &.spade:after {content: '\2660';}
+    &.club:before, &.club:after {content: '\2663';}
+    &.heart:before, &.heart:after {content: '\2665'; color: red;}
+    &.diamond:before, &.diamond:after {content: '\2666'; color: red;}
 }
