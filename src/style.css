@@ -1,40 +1,57 @@
 /* @import "~bootstrap/dist/css/bootstrap.min.css"; */
 
 body {
-  background: green;
+  background: #0e7e12;
   box-sizing: border-box;
 }
 
+.container-fluid {
+  margin-top: 200px;
+}
+
 .card {
+  text-align: center;
   display: inline-block;
-  margin: auto;
   background: white;
   margin: auto;
-  margin-top: 25vh;
-  height: 400px;
-  width: 250px;
-  padding: 20px;
+  height: 500px;
   font-size: 80px;
-  padding-top: 155px;
+  width: 400px;
+  padding: 20px;
+  padding-top: 180px;
   border: 1px solid black;
   border-radius: 5px;
   position: relative;
-    &:before{
-      position: absolute;
-      top: 0;
-      left: 0;
-      font-size: 80px;
-      padding-left: 20px;
-    }
-    &:after{
-      position: absolute;
-      bottom: 0;
-      right: 0;
-      font-size: 80px;
-      padding-right: 20px;
-    }
-    &.spade:before, &.spade:after {content: '\2660';}
-    &.club:before, &.club:after {content: '\2663';}
-    &.heart:before, &.heart:after {content: '\2665'; color: red;}
-    &.diamond:before, &.diamond:after {content: '\2666'; color: red;}
+  &:before {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    font-size: 80px;
+    padding-left: 20px;
+  }
+  &:after {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    font-size: 80px;
+    padding-right: 20px;
+  }
+  &.spade:before,
+  &.spade:after {
+    content: "\2660";
+  }
+  &.club:before,
+  &.club:after {
+    content: "\2663";
+  }
+  &.heart:before,
+  &.heart:after {
+    content: "\2665";
+    color: red;
+  }
+  &.diamond:before,
+  &.diamond:after {
+    content: "\2666";
+    color: red;
+  }
 }

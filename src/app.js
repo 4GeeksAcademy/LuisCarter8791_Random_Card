@@ -1,3 +1,6 @@
+import "./style.css";
+import "bootstrap";
+
 let generateRandomNumber = () => {
   let numbers = [
     "A",
